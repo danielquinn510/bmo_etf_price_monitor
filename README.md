@@ -14,7 +14,7 @@ A full-stack web application that reconstructs the historical performance of an 
 
 ## Setup & Running
 
-### 2. Start the Backend
+### 1. Start the Backend
 The backend runs on Port **5001**.
 
 Open a terminal and run:
@@ -29,8 +29,8 @@ pip install -r requirements.txt
 python app.py
 
 ```
-### 1. Start the Backend
-The backend runs on Port **5001**.
+### 2. Start the Frontend
+The frontend runs on Port **5001**.
 
 Open a terminal and run:
 
