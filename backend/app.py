@@ -27,8 +27,13 @@ def analyze_etf():
     for _, row in weights_df.iterrows():
         stock = row['name']
         weight = row['weight']
+        
+        if weight <= 0:
+            continue
+
         if stock in PRICES_DF.columns:
-            shares[stock] = (1000 * weight) / initial_prices[stock]
+            shares[stock] = weight 
+
             weights_info.append({
                 "name": stock,
                 "weight": weight
